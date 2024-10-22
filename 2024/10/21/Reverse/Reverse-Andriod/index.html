@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hello World | Hexo</title>
+  <title>Reverse_Andriod | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Android逆向策略拿到一道安卓逆向题，首先用jadx打开apk文件，分析java层代码，然后改apk为zip，解压缩文件夹，在IDA中分析lib下的so文件。 知识Activity一个Activity就是一个页面，每一次页面的切换就是Activity的切换。 我们怎么才能知道一个软件有哪些Acitivity呢？答案就是查找AndroidMainfest.xml文件里的Activity标签 Sr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2024/10/13/hello-world/index.html">
+<meta property="og:title" content="Reverse_Andriod">
+<meta property="og:url" content="http://example.com/2024/10/21/Reverse/Reverse-Andriod/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Android逆向策略拿到一道安卓逆向题，首先用jadx打开apk文件，分析java层代码，然后改apk为zip，解压缩文件夹，在IDA中分析lib下的so文件。 知识Activity一个Activity就是一个页面，每一次页面的切换就是Activity的切换。 我们怎么才能知道一个软件有哪些Acitivity呢？答案就是查找AndroidMainfest.xml文件里的Activity标签 Sr">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-10-12T16:51:47.957Z">
-<meta property="article:modified_time" content="2024-10-12T16:51:47.957Z">
+<meta property="article:published_time" content="2024-10-20T16:01:21.000Z">
+<meta property="article:modified_time" content="2024-10-20T16:01:51.378Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Reverse">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -71,10 +72,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Reverse/Reverse-Andriod" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/10/13/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-10-12T16:51:47.957Z" itemprop="datePublished">2024-10-13</time>
+    <a href="/2024/10/21/Reverse/Reverse-Andriod/" class="article-date">
+  <time class="dt-published" datetime="2024-10-20T16:01:21.000Z" itemprop="datePublished">2024-10-21</time>
 </a>
     
   </div>
@@ -85,7 +86,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Hello World
+      Reverse_Andriod
     </h1>
   
 
@@ -93,42 +94,46 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="Android逆向"><a href="#Android逆向" class="headerlink" title="Android逆向"></a>Android逆向</h1><h2 id="策略"><a href="#策略" class="headerlink" title="策略"></a>策略</h2><p>拿到一道安卓逆向题，首先用jadx打开apk文件，分析java层代码，然后改apk为zip，解压缩文件夹，在IDA中分析lib下的so文件。</p>
+<h2 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h2><h3 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h3><p>一个Activity就是一个页面，每一次页面的切换就是Activity的切换。</p>
+<p>我们怎么才能知道一个软件有哪些Acitivity呢？答案就是查找AndroidMainfest.xml文件里的Activity标签</p>
+<h3 id="Src"><a href="#Src" class="headerlink" title="Src"></a>Src</h3><p>在apk运行时可显示的大部分图片、字符串，都会被赋予一个int值，然后由一个R类统一管理，而具体的数据则是在res里的drawable和value里。</p>
+<h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><p>layout就是布局的意思，&#x2F;res&#x2F;layout里的带Activity字样的xml文件通常是用来描述Activity的大体布局。</p>
+<h3 id="Raw-Res"><a href="#Raw-Res" class="headerlink" title="Raw Res"></a>Raw Res</h3><p>apk中不用编译的资源（其他类型的文件）通常放在&#x2F;assets目录和&#x2F;res&#x2F;raw目录下</p>
+<h3 id="SO文件"><a href="#SO文件" class="headerlink" title="SO文件"></a>SO文件</h3><p>安卓的so文件，放在lib目录下，jadx只能处理java层的代码，所以需要用ida处理so层</p>
+<p>apk文件包本身就是一个压缩文件，修改后缀为zip，解压之后就可以得到</p>
+<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;Reverse-Andriod&#x2F;Android Tools1.png)</p>
+<p>以上就是.apk修改成.zip文件解压后的目录树</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/13/hello-world/" data-id="cm2kmdznk0000gktt0odt4elj" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Andriod/" data-id="cm2kmdznn0002gkttgwth7o6s" data-title="Reverse_Andriod" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2024/10/20/Reverse/Reverse-Tools/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2024/10/21/Reverse/Reverse-Junkcode/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Reverse_Tools
+          Reverse_Junkcode
         
       </div>
     </a>
   
+  
+    <a href="/2024/10/20/Reverse/Reverse-Function/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Reverse_Function</div>
+    </a>
   
 </nav>
 

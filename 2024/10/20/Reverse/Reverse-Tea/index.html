@@ -4,15 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>Reverse_Tea | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="TEA算法特征TEA算法的主要特征表现在sum和delta变量，以及核心加密中出现右移4左移5和异或。 加密使用的数据为3个32位无符号整数，密钥为4个32位无符号整数即密钥长度为128 123sum+&#x3D;deltav0+&#x3D;((v1&lt;&lt;4)+k0)^(v1+sum)^((v1&gt;&gt;5)+k1)v1+&#x3D;((v0&lt;&lt;4)+k2)^(v0+sum)^((v0&gt;&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reverse_Tea">
+<meta property="og:url" content="http://example.com/2024/10/20/Reverse/Reverse-Tea/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="TEA算法特征TEA算法的主要特征表现在sum和delta变量，以及核心加密中出现右移4左移5和异或。 加密使用的数据为3个32位无符号整数，密钥为4个32位无符号整数即密钥长度为128 123sum+&#x3D;deltav0+&#x3D;((v1&lt;&lt;4)+k0)^(v1+sum)^((v1&gt;&gt;5)+k1)v1+&#x3D;((v0&lt;&lt;4)+k2)^(v0+sum)^((v0&gt;&amp;gt">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/imgs/Reverse-Tea/a4e181c96960400794ac4c496dd57d1a.png">
+<meta property="article:published_time" content="2024-10-20T14:39:11.000Z">
+<meta property="article:modified_time" content="2024-10-20T15:32:27.864Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Reverse">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/imgs/Reverse-Tea/a4e181c96960400794ac4c496dd57d1a.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -67,229 +74,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Reverse/Reverse-Pyhton" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/22/Reverse/Reverse-Pyhton/" class="article-date">
-  <time class="dt-published" datetime="2024-10-22T15:31:07.000Z" itemprop="datePublished">2024-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/22/Reverse/Reverse-Pyhton/">Reverse_Pyhton</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Python逆向"><a href="#Python逆向" class="headerlink" title="Python逆向"></a>Python逆向</h1><h2 id="Step1：反编译exe"><a href="#Step1：反编译exe" class="headerlink" title="Step1：反编译exe"></a>Step1：反编译exe</h2><p>将题目和pyinstxtractor的py文件放入同一目录下，执行以下指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python pyinstxtracor.py 文件名</span><br></pre></td></tr></table></figure>
-
-<p>该目录出现反编译文件</p>
-<p><img src="/./../../imgs/Reverse-Pyhton/5.png"></p>
-<p>打开以上新生成的文件夹，找到与题目名称相同的文件，并修改后缀名为.pyc</p>
-<p><img src="/./../../imgs/Reverse-Pyhton/7.png"></p>
-<p>查看该文件使用的python版本</p>
-<p><img src="/./../../imgs/Reverse-Pyhton/8.png"></p>
-<h2 id="Step2：反编译pyc"><a href="#Step2：反编译pyc" class="headerlink" title="Step2：反编译pyc"></a>Step2：反编译pyc</h2><p>如果题目的python版本在3.9以上，则使用pycdc反编译pyc文件；如果题目的python版本在3.8及以下，则使用uncompyle6反编译pyc文件</p>
-<h3 id="pycdc"><a href="#pycdc" class="headerlink" title="pycdc"></a>pycdc</h3><p>在工具中找到pycdc，进入build文件夹，将题目拖入此目录下，并打开终端，运行以下指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pycdc.exe 文件名.pyc</span><br></pre></td></tr></table></figure>
-
-<p>即可得到反编译后的py文件</p>
-<h3 id="uncompyle6"><a href="#uncompyle6" class="headerlink" title="uncompyle6"></a>uncompyle6</h3><p>打开终端，在题目路径下运行以下指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uncompyle6 文件名.pyc &gt; 文件名.py</span><br></pre></td></tr></table></figure>
-
-<p>即可得到反编译后的py文件</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/22/Reverse/Reverse-Pyhton/" data-id="cm2kmdznp0006gktt8ucdenms" data-title="Reverse_Pyhton" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reverse/Reverse-Junkcode" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/21/Reverse/Reverse-Junkcode/" class="article-date">
-  <time class="dt-published" datetime="2024-10-21T05:39:33.000Z" itemprop="datePublished">2024-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/21/Reverse/Reverse-Junkcode/">Reverse_Junkcode</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="花指令"><a href="#花指令" class="headerlink" title="花指令"></a>花指令</h1><p><a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/14625?time__1311=GqAhYK0KBKAK7KDsD7+vPiIbuxRr==7oD#toc-26">逆向专辑–花指令阅读与分析 - 先知社区 (aliyun.com)</a></p>
-<h1 id="exe去花"><a href="#exe去花" class="headerlink" title="exe去花"></a>exe去花</h1><h1 id="pyc去花"><a href="#pyc去花" class="headerlink" title="pyc去花"></a><a target="_blank" rel="noopener" href="https://gift1a.github.io/2022/02/14/pyc%E5%8A%A0%E8%8A%B1%E6%8C%87%E4%BB%A4/">pyc去花</a></h1><p>对pyc文件反编译时发现存在花指令。</p>
-<h2 id="Step1：查看字节码"><a href="#Step1：查看字节码" class="headerlink" title="Step1：查看字节码"></a>Step1：查看字节码</h2><p>脚本</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> marshal, dis</span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;D:\\new\\AD\\game\\vnctf2022\\re\\BabyMaze.pyc&quot;</span>, <span class="string">&quot;rb&quot;</span>).read()</span><br><span class="line">code = marshal.loads(f[<span class="number">16</span>:]) <span class="comment">#这边从16位开始取因为是python3 python2从8位开始取</span></span><br><span class="line">dis.dis(code)</span><br></pre></td></tr></table></figure>
-
-<p>在字节码中找到花指令</p>
-<p><img src="/./../../imgs/Reverse-Junkcode/3461097-20240927200834916-1506671585.png"></p>
-<h2 id="Step2：搜索opcode-h"><a href="#Step2：搜索opcode-h" class="headerlink" title="Step2：搜索opcode.h"></a>Step2：搜索opcode.h</h2><p>在python包中搜索opcode.h，找到花指令所对应的字节码</p>
-<p><img src="/./../../imgs/Reverse-Junkcode/1644848986760.png"></p>
-<p>将指令对应十进制数转为十六二进制数，用010editor打开pyc文件，在文件中找到指令对应十六进制数，将其去掉</p>
-<p><img src="/./../../imgs/Reverse-Junkcode/1644849226023.png"></p>
-<h2 id="Step3：修改字节码长度"><a href="#Step3：修改字节码长度" class="headerlink" title="Step3：修改字节码长度"></a>Step3：修改字节码长度</h2><p>先打印出pyc文件的字节码长度</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">len</span>(code.co_code))</span><br></pre></td></tr></table></figure>
-
-<p>将原字节码数目减去删除花指令的字节码数目，得到patch后的pyc字节码长度，并在010editor中找到字节码长度进行修改</p>
-<p>如原字节码长度为1B,减去删掉的花指令对应字节码数得到修改后文件字节码长15</p>
-<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;Reverse-Junkcode&#x2F;3461097-20240804154049142-1938389440 (1).png)</p>
-<h2 id="Step4-反编译"><a href="#Step4-反编译" class="headerlink" title="Step4:反编译"></a>Step4:反编译</h2><p>保存patch后的文件，对其用pycdc&#x2F;uncompyle6进行反编译</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Junkcode/" data-id="cm2kmdznm0001gkttbmev6mdr" data-title="Reverse_Junkcode" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reverse/Reverse-Andriod" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/21/Reverse/Reverse-Andriod/" class="article-date">
-  <time class="dt-published" datetime="2024-10-20T16:01:21.000Z" itemprop="datePublished">2024-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/21/Reverse/Reverse-Andriod/">Reverse_Andriod</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Android逆向"><a href="#Android逆向" class="headerlink" title="Android逆向"></a>Android逆向</h1><h2 id="策略"><a href="#策略" class="headerlink" title="策略"></a>策略</h2><p>拿到一道安卓逆向题，首先用jadx打开apk文件，分析java层代码，然后改apk为zip，解压缩文件夹，在IDA中分析lib下的so文件。</p>
-<h2 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h2><h3 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h3><p>一个Activity就是一个页面，每一次页面的切换就是Activity的切换。</p>
-<p>我们怎么才能知道一个软件有哪些Acitivity呢？答案就是查找AndroidMainfest.xml文件里的Activity标签</p>
-<h3 id="Src"><a href="#Src" class="headerlink" title="Src"></a>Src</h3><p>在apk运行时可显示的大部分图片、字符串，都会被赋予一个int值，然后由一个R类统一管理，而具体的数据则是在res里的drawable和value里。</p>
-<h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><p>layout就是布局的意思，&#x2F;res&#x2F;layout里的带Activity字样的xml文件通常是用来描述Activity的大体布局。</p>
-<h3 id="Raw-Res"><a href="#Raw-Res" class="headerlink" title="Raw Res"></a>Raw Res</h3><p>apk中不用编译的资源（其他类型的文件）通常放在&#x2F;assets目录和&#x2F;res&#x2F;raw目录下</p>
-<h3 id="SO文件"><a href="#SO文件" class="headerlink" title="SO文件"></a>SO文件</h3><p>安卓的so文件，放在lib目录下，jadx只能处理java层的代码，所以需要用ida处理so层</p>
-<p>apk文件包本身就是一个压缩文件，修改后缀为zip，解压之后就可以得到</p>
-<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;Reverse-Andriod&#x2F;Android Tools1.png)</p>
-<p>以上就是.apk修改成.zip文件解压后的目录树</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Andriod/" data-id="cm2kmdznn0002gkttgwth7o6s" data-title="Reverse_Andriod" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reverse/Reverse-Function" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/20/Reverse/Reverse-Function/" class="article-date">
-  <time class="dt-published" datetime="2024-10-20T15:34:17.000Z" itemprop="datePublished">2024-10-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/20/Reverse/Reverse-Function/">Reverse_Function</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="ptrace函数"><a href="#ptrace函数" class="headerlink" title="ptrace函数"></a>ptrace函数</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/ptrace.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">long</span> <span class="title function_">ptrace</span><span class="params">(<span class="keyword">enum</span> __ptrace_request request, <span class="type">pid_t</span> pid,</span></span><br><span class="line"><span class="params">            <span class="type">void</span> *addr, <span class="type">void</span> *data)</span>;</span><br></pre></td></tr></table></figure>
-
-<h5 id="1、进程附着"><a href="#1、进程附着" class="headerlink" title="1、进程附着"></a>1、进程附着</h5><p><strong>PTRACE_ATTACH :</strong> 指明要附着的进程 ;</p>
-<h5 id="2、进程脱离"><a href="#2、进程脱离" class="headerlink" title="2、进程脱离"></a>2、进程脱离</h5><p><strong>PTRACE_DETACH :</strong> 要脱离的进程 ;</p>
-<h5 id="3、进程数据读写权限"><a href="#3、进程数据读写权限" class="headerlink" title="3、进程数据读写权限"></a>3、进程数据读写权限</h5><p>读取进程数据权限 : <strong>PTRACE_PEEKTEXT、PTRACE_PEEKDATA、PTRACE_PEEKUSER</strong></p>
-<p>写入进程数据权限 : <strong>PTRACE_POKETEXT、PTRACE_POKEDATA、PTRACE_POKEUSER</strong></p>
-<h5 id="4、进程对应的主线程寄存器读写"><a href="#4、进程对应的主线程寄存器读写" class="headerlink" title="4、进程对应的主线程寄存器读写"></a>4、进程对应的主线程寄存器读写</h5><p>读取寄存器 : <strong>PTRACE_GETREGS</strong></p>
-<p>写出寄存器 : <strong>PTRACE_SETREGS</strong></p>
-<h5 id="5、单步调试"><a href="#5、单步调试" class="headerlink" title="5、单步调试"></a>5、单步调试</h5><p><strong>PTRACE_SYSCALL :</strong> 每当发生系统调用时, 被调试进程暂停 , 将控制权交还给调试进程 ;</p>
-<p><strong>PTRACE_SINGLESTEP :</strong> 每当执行一条指令时 , 被调试进程暂停 , 将控制权交还给调试进程 ; 单步调试 ;</p>
-<h5 id="6、继续向后执行"><a href="#6、继续向后执行" class="headerlink" title="6、继续向后执行"></a>6、继续向后执行</h5><p><strong>PTRACE_CONT</strong> : ptrace 调试进程 , 完毕之后 , 退出调试 , 程序继续向后执行 , 使用该 PTRACE_CONT 作为 ptrace 函数的 第一参数即可 ;</p>
-<p>CONTINUE 继续执行 ;</p>
-<h1 id="fork函数："><a href="#fork函数：" class="headerlink" title="fork函数："></a>fork函数：</h1><p><code>fork</code> 是一个系统调用，用于创建一个新进程。调用 <code>fork</code> 后，操作系统会复制当前进程（父进程），并创建一个新的进程（子进程）。如果 <code>fork</code> 成功，它会返回子进程的 PID（进程标识符）给父进程，而在子进程中则返回 0。如果失败，<code>fork</code> 会返回 -1，并设置 <code>errno</code> 变量以指示错误类型。</p>
-<h1 id="perror函数："><a href="#perror函数：" class="headerlink" title="perror函数："></a>perror函数：</h1><p><code>perror</code> 是一个用于打印错误信息的标准库函数。它接受一个字符串参数，并将该字符串与当前 <code>errno</code> 变量所表示的错误信息结合起来，输出到标准错误流（通常是终端）。字符串参数通常用来指明导致错误的上下文。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Function/" data-id="cm2kmdzno0004gktteol92zcf" data-title="Reverse_Function" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Reverse/Reverse-Tea" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Reverse/Reverse-Tea" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/10/20/Reverse/Reverse-Tea/" class="article-date">
   <time class="dt-published" datetime="2024-10-20T14:39:11.000Z" itemprop="datePublished">2024-10-20</time>
@@ -302,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/20/Reverse/Reverse-Tea/">Reverse_Tea</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Reverse_Tea
     </h1>
   
 
@@ -344,152 +129,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Reverse/Reverse-Tools" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/20/Reverse/Reverse-Tools/" class="article-date">
-  <time class="dt-published" datetime="2024-10-20T14:38:51.000Z" itemprop="datePublished">2024-10-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2024/10/20/Reverse/Reverse-Function/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/20/Reverse/Reverse-Tools/">Reverse_Tools</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="IDA-Pro"><a href="#IDA-Pro" class="headerlink" title="IDA Pro"></a>IDA Pro</h1><h2 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/N1ng/p/18436311">IDA pro - w1hake2 - 博客园 (cnblogs.com)</a></p>
-<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p><strong>C</strong>：强转为汇编代码</p>
-<p><strong>D</strong>：改变数据类型，如db，dw，dd</p>
-<h2 id="IDA-Python"><a href="#IDA-Python" class="headerlink" title="IDA Python"></a>IDA Python</h2><p>去花指令，处理SMC</p>
-<h3 id="使用脚本的三种方法："><a href="#使用脚本的三种方法：" class="headerlink" title="使用脚本的三种方法："></a>使用脚本的三种方法：</h3><p>1、调出界面：Shift+F12 或者 File-&gt;Script command</p>
-<p>2、写一个脚本文件直接引用：File-&gt;Script file</p>
-<p>3、在IDA底部写命令</p>
-<h3 id="三个独立模块"><a href="#三个独立模块" class="headerlink" title="三个独立模块"></a>三个独立模块</h3><p>idc：idc函数的兼容模块，包含IDA内置函数声明和内部定义</p>
-<p>idautils：实用函数模块</p>
-<p>idaapi：访问更多底层数据的模块</p>
-<h2 id="动态调试"><a href="#动态调试" class="headerlink" title="动态调试"></a>动态调试</h2><p>F4：运行到光标所在处</p>
-<p>Ctrl+F7：直到该函数返回时停止</p>
-<p>双击ZF：更改ZF标志寄存器，控制函数跳转</p>
-<h2 id="远程调试"><a href="#远程调试" class="headerlink" title="远程调试"></a>远程调试</h2><h3 id="Step1"><a href="#Step1" class="headerlink" title="Step1"></a>Step1</h3><p>在ida目录下的dbgsrv文件找到linux_server64和要动调的文件，拖入kali中，终端输入指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod +x linux_server64</span><br><span class="line">chmod +x 文件名</span><br><span class="line">//对文件进行授权</span><br></pre></td></tr></table></figure>
-
-<h3 id="Step2"><a href="#Step2" class="headerlink" title="Step2"></a>Step2</h3><p>打开ida的remote Linux debugger，修改信息</p>
-<p> <img src="/./../../imgs/Reverse-Tools/a4e181c96960400794ac4c496dd57d1a.png"></p>
-<p>关于查看Linux的ip地址</p>
-<p><img src="/./../../imgs/Reverse-Tools/3461097-20240927180115098-1552151769.png"></p>
-<h3 id="Step3"><a href="#Step3" class="headerlink" title="Step3"></a>Step3</h3><p>运行linux_server64（linux_server64的位置必须在当前终端所在路径下）后就可以在IDA中开始动调了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./linux_server64</span><br></pre></td></tr></table></figure>
-
-<h2 id="手动修复栈指针"><a href="#手动修复栈指针" class="headerlink" title="手动修复栈指针"></a>手动修复栈指针</h2><p>用于处理无法反编译的情况</p>
-<p><img src="/./../../imgs/Reverse-Tools/3461097-20240927180115098-1552151769-1729441683139-3.png"></p>
-<p>点击options-&gt;general</p>
-<p><img src="/./../../imgs/Reverse-Tools/3461097-20240927200813692-110615041.png"></p>
-<p>对标红位置按ALT+K，修改栈偏移</p>
-<p><img src="/./../../imgs/Reverse-Tools/3461097-20240927200834916-1506671585.png"></p>
-<h2 id="Dump代码生成新脚本"><a href="#Dump代码生成新脚本" class="headerlink" title="Dump代码生成新脚本"></a>Dump代码生成新脚本</h2><p>使用IDA Pro调试程序时偶尔会遇到dump内存的需求，IDA Pro并没有直</p>
-<p>接提供内存dump的功能，但可以通过其提供的接口用脚本来实现相关功能</p>
-<p><strong>IDC脚本</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto i,fp;</span><br><span class="line">fp = fopen(&quot;d:\\dump.dex&quot;,&quot;wb&quot;);</span><br><span class="line">for (i = start_address; i &lt;= end_address; i++)</span><br><span class="line">     fputc(Byte(i),fp);</span><br></pre></td></tr></table></figure>
-
-<p><strong>IDAPython脚本</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import idaapi</span><br><span class="line">data = idaapi.dbg_read_memory(start_address, data_length)</span><br><span class="line">fp = open(&#x27;d:\\dump&#x27;, &#x27;wb&#x27;)</span><br><span class="line">fp.write(data)</span><br><span class="line">fp.close()</span><br></pre></td></tr></table></figure>
-
-<h1 id="X64dbg"><a href="#X64dbg" class="headerlink" title="X64dbg"></a>X64dbg</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/mq0036/p/17533894.html">熟悉x64dbg调试器的使用 - jack_Meng - 博客园 (cnblogs.com)</a></p>
-<h1 id="汇编JMP"><a href="#汇编JMP" class="headerlink" title="汇编JMP"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jkcx/p/12005803.html#:~:text=%E7%9F%AD%E8%B7%B3%E8%BD%AC%EF%BC%88Short%20Jmp%EF%BC%8C%E5%8F%AA%E8%83%BD%E8%B7%B3%E8%BD%AC%E5%88%B0256%E5%AD%97%E8%8A%82%E7%9A%84%E8%8C%83%E5%9B%B4%E5%86%85%EF%BC%89%EF%BC%8C%E5%AF%B9%E5%BA%94%E6%9C%BA%E5%99%A8%E7%A0%81%EF%BC%9AEB%20%E8%BF%91%E8%B7%B3%E8%BD%AC%EF%BC%88Near,Jmp%EF%BC%8C%E5%8F%AF%E8%B7%B3%E8%87%B3%E5%90%8C%E4%B8%80%E6%AE%B5%E8%8C%83%E5%9B%B4%E5%86%85%E7%9A%84%E5%9C%B0%E5%9D%80%EF%BC%89%EF%BC%8C%E5%AF%B9%E5%BA%94%E6%9C%BA%E5%99%A8%E7%A0%81%EF%BC%9AE9%20%E8%BF%9C%E8%B7%B3%E8%BD%AC%EF%BC%88Far%20Jmp%EF%BC%8C%E5%8F%AF%E8%B7%B3%E8%87%B3%E4%BB%BB%E6%84%8F%E5%9C%B0%E5%9D%80%EF%BC%89%EF%BC%8C%E5%AF%B9%E5%BA%94%E6%9C%BA%E5%99%A8%E7%A0%81%EF%BC%9A%20EA">汇编JMP</a></h1><p><strong>RVA:</strong> 相对虚拟地址（Relative Virtual Address），在内存中相对于PE文件装入地址的偏移位置，是一个相对地址。</p>
-<h2 id="JMP三种类型"><a href="#JMP三种类型" class="headerlink" title="JMP三种类型"></a>JMP三种类型</h2><p>短跳转：能跳转到256字节的范围内，字节码EB</p>
-<p>长跳转：可跳至同一段范围内的地址，字节码E9</p>
-<p>远跳转：可跳至任意地址，字节码EA</p>
-<p><strong>短跳转</strong> 和 <strong>近跳转</strong> 指令中包含的操作数都是相对于(E)IP的<strong>偏移</strong>。</p>
-<p><strong>远跳转</strong>指令中包含的是目标的<strong>绝对地址</strong></p>
-<h2 id="JMP目标地址计算公式"><a href="#JMP目标地址计算公式" class="headerlink" title="JMP目标地址计算公式"></a>JMP目标地址计算公式</h2><p>目标地址 &#x3D; 当前指令地址 + 指令长度 + RVA</p>
-<h3 id="eg："><a href="#eg：" class="headerlink" title="eg："></a>eg：</h3><p><img src="/./../../imgs/Reverse-Tools/417989-20191208150447879-1509611628.png"></p>
-<p> 想要从 001392DB 处跳转到 001392E1 这个地址</p>
-<p><strong>RVA &#x3D; 001392E1 - 001392DB - 5</strong></p>
-<p>在计算机中使用上面的公式计算结果就是 RVA &#x3D; 1 所以后面应该是跟 E9 01 00 00 00<br>其中 5 是指令长度 E9 后面需要跟 4 字节的地址，所以指令(1)+地址(4) &#x3D; 5</p>
-<p><strong>注</strong>：如果计算结果是负数，则数值后面应该用 FF 填充，如负一则应该用 E9 01 FF FF FF</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Tools/" data-id="cm2kmdznp0005gktt46hv42ta" data-title="Reverse_Tools" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/10/13/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-10-12T16:51:47.957Z" itemprop="datePublished">2024-10-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          Reverse_Function
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/10/13/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2024/10/20/Reverse/Reverse-Tools/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Reverse_Tools</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/13/hello-world/" data-id="cm2kmdznk0000gktt0odt4elj" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
