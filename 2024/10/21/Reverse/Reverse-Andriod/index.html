@@ -14,7 +14,7 @@
 <meta property="og:description" content="Android逆向策略拿到一道安卓逆向题，首先用jadx打开apk文件，分析java层代码，然后改apk为zip，解压缩文件夹，在IDA中分析lib下的so文件。 知识Activity一个Activity就是一个页面，每一次页面的切换就是Activity的切换。 我们怎么才能知道一个软件有哪些Acitivity呢？答案就是查找AndroidMainfest.xml文件里的Activity标签 Sr">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-20T16:01:21.000Z">
-<meta property="article:modified_time" content="2024-10-20T16:01:51.378Z">
+<meta property="article:modified_time" content="2024-10-22T16:04:42.772Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Reverse">
 <meta name="twitter:card" content="summary">
@@ -101,14 +101,12 @@
 <h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><p>layout就是布局的意思，&#x2F;res&#x2F;layout里的带Activity字样的xml文件通常是用来描述Activity的大体布局。</p>
 <h3 id="Raw-Res"><a href="#Raw-Res" class="headerlink" title="Raw Res"></a>Raw Res</h3><p>apk中不用编译的资源（其他类型的文件）通常放在&#x2F;assets目录和&#x2F;res&#x2F;raw目录下</p>
 <h3 id="SO文件"><a href="#SO文件" class="headerlink" title="SO文件"></a>SO文件</h3><p>安卓的so文件，放在lib目录下，jadx只能处理java层的代码，所以需要用ida处理so层</p>
-<p>apk文件包本身就是一个压缩文件，修改后缀为zip，解压之后就可以得到</p>
-<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;Reverse-Andriod&#x2F;Android Tools1.png)</p>
-<p>以上就是.apk修改成.zip文件解压后的目录树</p>
+<p>apk文件包本身就是一个压缩文件，修改后缀为zip，解压之后就可以得到许多文件和文件夹（目录树可上网搜索）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Andriod/" data-id="cm2kmdznn0002gkttgwth7o6s" data-title="Reverse_Andriod" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Andriod/" data-id="cm2kmzze900095ctt4rr4e066" data-title="Reverse_Andriod" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
