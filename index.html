@@ -69,6 +69,241 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Web前端/Html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/11/03/Web%E5%89%8D%E7%AB%AF/Html/" class="article-date">
+  <time class="dt-published" datetime="2024-11-03T04:02:34.000Z" itemprop="datePublished">2024-11-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/11/03/Web%E5%89%8D%E7%AB%AF/Html/">Html</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/11/03/Web%E5%89%8D%E7%AB%AF/Html/" data-id="cm312mv6a0002qott698rab33" data-title="Html" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Web前端/DevTools" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/25/Web%E5%89%8D%E7%AB%AF/DevTools/" class="article-date">
+  <time class="dt-published" datetime="2024-10-24T16:24:12.000Z" itemprop="datePublished">2024-10-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/25/Web%E5%89%8D%E7%AB%AF/DevTools/">DevTools</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="DevTools"><a href="#DevTools" class="headerlink" title="DevTools"></a>DevTools</h1><p>Web开发工具，用于检查和调试网页、Web应用，还可以在DevTools环境中编辑源文件和创建网站项目。</p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/microsoft-edge/devtools-guide-chromium/overview">DevTools 概述 - Microsoft Edge Developer documentation | Microsoft Learn</a></p>
+<h2 id="控制台Console"><a href="#控制台Console" class="headerlink" title="控制台Console"></a>控制台Console</h2><p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/microsoft-edge/devtools-guide-chromium/console/">控制台概述 - Microsoft Edge Developer documentation | Microsoft Learn</a></p>
+<h3 id="在Web上搜索控制台错误消息字符串"><a href="#在Web上搜索控制台错误消息字符串" class="headerlink" title="在Web上搜索控制台错误消息字符串"></a>在Web上搜索控制台错误消息字符串</h3><p>控制台中，有许多错误消息有一个“在Web上搜索此消息”的按钮，显示为一个放大镜。</p>
+<p>点击此按钮，浏览器会打开新选项卡，并显示此错误消息的搜索结果。</p>
+<h3 id="筛选控制台消息"><a href="#筛选控制台消息" class="headerlink" title="筛选控制台消息"></a>筛选控制台消息</h3><p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/microsoft-edge/devtools-guide-chromium/console/console-filters">筛选控制台消息 - Microsoft Edge Developer documentation | Microsoft Learn</a></p>
+<h3 id="过滤器面板"><a href="#过滤器面板" class="headerlink" title="过滤器面板"></a>过滤器面板</h3><p>提供各种过滤选项，可以根据日志类型（如日志、信息、警告、错误）或关键词过滤显示内容。</p>
+<p><img src="/./../../imgs/DevTools/6e49b8e31f0aa5e961498823903faf2b.png"></p>
+<h3 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#日志输出</span><br><span class="line">console.log()</span><br><span class="line">console.info()</span><br><span class="line">consile.warn()</span><br><span class="line">console.error()</span><br><span class="line"></span><br><span class="line">#清空控制台</span><br><span class="line">console.clear()</span><br></pre></td></tr></table></figure>
+
+<h3 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h3><p>文档对象模型（DOM）是一个网络文档的编程接口，它代表页面，以便程序可以改变文档的结构、风格、内容。DOM将文档表示为节点和对象，这样，编程语言就可以与页面交互。</p>
+<p>DOM是用于建立网站的Web API。</p>
+<h3 id="0、-1、-2、-3、-4"><a href="#0、-1、-2、-3、-4" class="headerlink" title="$0、$1、$2、$3、$4"></a>$0、$1、$2、$3、$4</h3><p>$0 是对当前在 Element 面板中选中的 html 节点的引用，$1是对上一次选择节点的引用，以此类推直到$4，通过$的引用可以读取 DOM 节点的一些属性。</p>
+<p><img src="/./../../imgs/DevTools/3452790886-638ea4298a930_fix732.webp"></p>
+<h3 id="和"><a href="#和" class="headerlink" title="$ 和 $$"></a>$ 和 $$</h3><p>$ 等价于 document.querySelector()</p>
+<p>$$ 等价于 document.querySelectorAll()</p>
+<h3 id=""><a href="#" class="headerlink" title="$_"></a>$_</h3><p>$_为对上次输出结果的引用</p>
+<h2 id="应用Application"><a href="#应用Application" class="headerlink" title="应用Application"></a>应用Application</h2><p>应用面板主要用于管理和调试Web应用的数据和资源，通过Application面板，开发者可以查看和操作各种存储机制、缓存数据、服务工作者以及应用安全设置等。</p>
+<h3 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h3><h4 id="LocalStorage"><a href="#LocalStorage" class="headerlink" title="LocalStorage"></a>LocalStorage</h4><h5 id="查看数据"><a href="#查看数据" class="headerlink" title="查看数据"></a>查看数据</h5><p>是一种在浏览器中保存键值对数据的机制，数据没有过期时间</p>
+<p>，可长期保存在用于浏览器中。使用LocoalStorage可以看到当前所有的存储数据。</p>
+<p><img src="/./../../imgs/DevTools/6690bcf11ab343864284c4544ccce5f5.png"></p>
+<h5 id="添加-修改-删除数据"><a href="#添加-修改-删除数据" class="headerlink" title="添加&#x2F;修改&#x2F;删除数据"></a>添加&#x2F;修改&#x2F;删除数据</h5><p>1、可以直接在面板中添加新的键值对，或修改现有的数据。</p>
+<p>2、选中要删除的键值对，右键选择删除，或使用删除键</p>
+<h4 id="SessionStorage"><a href="#SessionStorage" class="headerlink" title="SessionStorage"></a>SessionStorage</h4><p>它的数据只在当前会话有效，一旦关闭页面或浏览器，数据就会被清除。SessionStorage适用于存储一些临时数据，如表单状态、用户操作记录等。</p>
+<p><img src="/./../../imgs/DevTools/bc00fdc14fcb23e991a8190962424a9d.png"></p>
+<p>添加&#x2F;修改&#x2F;删除数据同LoacalStorage</p>
+<h3 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies"></a>Cookies</h3><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies">HTTP Cookie - HTTP | MDN (mozilla.org)</a></p>
+<p>Cookies是Web开发中最早的存储机制之一，用于在客户端保存小块数据。Cookies通常用于会话管理、个性化设置以及跟踪用户行为等。</p>
+<p><img src="/./../../imgs/DevTools/b1a7684ea6dffd8bd5fae7b4eb225ee3.png"></p>
+<p>可添加、修改、阐述Cookies</p>
+<h2 id="源代码Source"><a href="#源代码Source" class="headerlink" title="源代码Source"></a>源代码Source</h2><h3 id="文件资源管理器（左侧）"><a href="#文件资源管理器（左侧）" class="headerlink" title="文件资源管理器（左侧）"></a>文件资源管理器（左侧）</h3><p><strong>文件树</strong>：显示当前项目的文件和目录结构</p>
+<p><strong>搜索栏</strong>：用于快速搜索文件或内容</p>
+<p><strong>过滤器</strong>：可以通过文件类型、名称等条件对文件进行过滤</p>
+<p><img src="/./../../imgs/DevTools/caf6c4d2b0539fad036ebd7f2cf16bc7.png"></p>
+<h3 id="编辑器（中间）"><a href="#编辑器（中间）" class="headerlink" title="编辑器（中间）"></a>编辑器（中间）</h3><p><strong>代码编辑器</strong>：查看和编辑代码</p>
+<p><strong>标签页</strong>：多个文件可以同时打开，每个文件会显示在一个标签页中，方便切换和对比</p>
+<p><strong>断点标记</strong>：在行号旁边设置断点，用于调试代码</p>
+<p><img src="/./../../imgs/DevTools/82d9eeb055e39a362e50a893f2708922.png"></p>
+<h3 id="调试面板（右侧）："><a href="#调试面板（右侧）：" class="headerlink" title="调试面板（右侧）："></a>调试面板（右侧）：</h3><p><strong>调用栈</strong>：显示当前代码执行过程中的调用堆栈</p>
+<p><strong>作用域</strong>：显示当前上下文中的变量和它们的值</p>
+<p><strong>监视</strong>：可以手动添加表达式，实时监视其值</p>
+<p><strong>断点</strong>：列出当前设置的所有断点，便于管理</p>
+<p><strong>编辑与保存</strong>：可以直接在线编辑项目中的源代码，DevTools会自动保存，修改代码后即时生效，能立即在浏览器中看到效果。（自动保存功能可通过设置进行开启或关闭）</p>
+<p><img src="/./../../imgs/DevTools/0b2853a246f1d6eb8e41bacb6de36dec.png"></p>
+<h4 id="Snippets代码片段"><a href="#Snippets代码片段" class="headerlink" title="Snippets代码片段"></a>Snippets代码片段</h4><p>允许保存并运行JavaScript代码片段，这对于反复执行的代码或测试特定功能非常有用。</p>
+<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;DevTools&#x2F;屏幕截图 2024-10-25 194549.png)</p>
+<h4 id="调试控制"><a href="#调试控制" class="headerlink" title="调试控制"></a>调试控制</h4><p><strong>继续F8</strong>：继续执行代码，直到遇到下一个断点或代码执行完毕。</p>
+<p><strong>逐行执行F10</strong>：执行下一行代码，但不进入函数内部。如果当前行是一个函数调用，则直接执行该函数，跳过内部详细执行。</p>
+<p><strong>逐步进入F11</strong>：进入函数内部，逐行执行函数内部代码。</p>
+<p><strong>逐步跳出Shift+F11</strong>：执行完当前函数内部的所有代码，然后返回到函数调用点的下一行代码。</p>
+<h4 id="查看调用栈"><a href="#查看调用栈" class="headerlink" title="查看调用栈"></a>查看调用栈</h4><p>调用栈是显示当前代码执行路径的工具，可以帮助了解函数是如何被调用的，以及当前执行到哪一行代码。</p>
+<p>#在代码暂停执行时，调用栈面板会显示当前的调用路径</p>
+<p>#调用栈按顺序列出所有被调用的函数，从最新的函数调用开始，最上方是当前执行的函数，依次向下是之前调用的函数</p>
+<p>#点击调用栈中的任意函数，可以导航到相应的代码位置，查看和调试该函数的具体实现</p>
+<h4 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h4><p>显示当前上下文中的所有变量及其值，帮助了解在当前执行点上哪些变量是可访问的，以及他们的具体状态</p>
+<h5 id="Local-Scope本地作用域"><a href="#Local-Scope本地作用域" class="headerlink" title="Local Scope本地作用域"></a>Local Scope本地作用域</h5><p>显示当前函数内部的所有局部变量</p>
+<p>通过展开变量，可以查看其具体值和结构（如对象的属性）</p>
+<h5 id="Global-Scope全局作用域"><a href="#Global-Scope全局作用域" class="headerlink" title="Global Scope全局作用域"></a>Global Scope全局作用域</h5><p>显示全局范围内的变量，通常包括窗口对象（Window）和全局变量</p>
+<p>了解全局变量的状态，可以帮助分析在整个应用程序范围内的变量变化</p>
+<h4 id="Closure闭包"><a href="#Closure闭包" class="headerlink" title="Closure闭包"></a>Closure闭包</h4><p><strong>闭包</strong>：内部函数总是可以访问其所在的外部函数中声明的参数和变量，即使在其外部函数被返回了</p>
+<p>如果当前执行的函数是一个闭包，作用域面板会显示该函数捕获的外部变量</p>
+<p>分析闭包中的变量，有助于理解函数在其定义时所捕获的上下文</p>
+<h5 id="监视变量与表达式"><a href="#监视变量与表达式" class="headerlink" title="监视变量与表达式"></a>监视变量与表达式</h5><p>在动态调试中，可以实时跟踪特定变量或表达式的值的变化。</p>
+<h5 id="添加监视表达式"><a href="#添加监视表达式" class="headerlink" title="添加监视表达式"></a>添加监视表达式</h5><p>#在作用于面板中，右键点击某个变量并选择“添加到监视”</p>
+<p>#或者在“监视”面板中，点击“添加表达式”，然后输入想监视的变量名或表达式</p>
+<h5 id="查看监视表达式结果"><a href="#查看监视表达式结果" class="headerlink" title="查看监视表达式结果"></a>查看监视表达式结果</h5><p>#在“监视”面板中，可以看到所有添加的监视表达式以及当前的值</p>
+<p>#在代码执行到断点时，监视面板会自动更新表达式的值，帮助实时跟踪变量状态。</p>
+<h2 id="网络Network"><a href="#网络Network" class="headerlink" title="网络Network"></a>网络Network</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/593341109">深入浅出：巧用 Chrome DevTools 进行网络请求调试 - 知乎 (zhihu.com)</a></p>
+<h3 id="请求列表"><a href="#请求列表" class="headerlink" title="请求列表"></a>请求列表</h3><p>显示了所有被记录的网络请求，每个请求以一行的形式展示，包含以下信息：请求类型、状态码、请求和响应时间、请求大小等</p>
+<p><img src="/./../../imgs/DevTools/d90e27270734ba7612ded88dab6d15f1.png"></p>
+<p><strong>请求详情图</strong></p>
+<p>点击请求列表中的某个请求，可以打开其详细信息视图</p>
+<p><strong>底部功能区</strong></p>
+<p>提供了网络请求的总体统计信息和概览</p>
+<h3 id="网络请求的基本信息"><a href="#网络请求的基本信息" class="headerlink" title="网络请求的基本信息"></a>网络请求的基本信息</h3><p><strong>启动和停止网络活动记录</strong></p>
+<p>默认情况下，网络面板会自动记录所有网络活动，点击该按钮可以手动控制记录的开始和停止</p>
+<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;DevTools&#x2F;465d2c92fcd4b7b71d06aa4a7b163d15 (1).png)</p>
+<p><strong>清除网络活动记录</strong></p>
+<p>清除当前的网络请求记录，使网络面板重新开始记录新的网络请求</p>
+<p><img src="/./../../imgs/DevTools/192fdfa360a074b3282b250a39544cc8.png"></p>
+<h3 id="请求的详细信息"><a href="#请求的详细信息" class="headerlink" title="请求的详细信息"></a>请求的详细信息</h3><h4 id="Headers（请求头和响应头）"><a href="#Headers（请求头和响应头）" class="headerlink" title="Headers（请求头和响应头）"></a>Headers（请求头和响应头）</h4><p>显示请求和响应的所有头信息，包括URL、方法、状态码、服务器等，以及查询字符串参数</p>
+<p><img src="/./../../imgs/DevTools/1747728db77819e67bf092158836f59b.png"></p>
+<h4 id="Preview（响应预览）"><a href="#Preview（响应预览）" class="headerlink" title="Preview（响应预览）"></a>Preview（响应预览）</h4><p>以可读格式响应数据，适用于JSON、HTNML等格式</p>
+<p><img src="/./../../imgs/DevTools/ffad97e0a73e6f42ae03cd6114c845a0.png"></p>
+<h4 id="Response（响应体）"><a href="#Response（响应体）" class="headerlink" title="Response（响应体）"></a>Response（响应体）</h4><p>显示原始响应数据，便于查看和分析</p>
+<p><img src="/./../../imgs/DevTools/fdff3bd34507345176463de7e93dbd3f.png"></p>
+<h4 id="Timing（请求的时间信息）"><a href="#Timing（请求的时间信息）" class="headerlink" title="Timing（请求的时间信息）"></a>Timing（请求的时间信息）</h4><p>显示请求各个阶段的时间小号，如发起请求、等待响应、接收数据等，帮助分析性能瓶颈</p>
+<h4 id="Cookies-1"><a href="#Cookies-1" class="headerlink" title="Cookies"></a>Cookies</h4><p>列出请求和响应中涉及的所有Cookies信息，包括名称、值、域、路径、过期时间等</p>
+<p><img src="/./../../imgs/DevTools/e3c5afdc35fd1b88584567f2534e3ef8.png"></p>
+<h4 id="过滤和搜索"><a href="#过滤和搜索" class="headerlink" title="过滤和搜索"></a>过滤和搜索</h4><p>调试和分析网页的网络请求时，网络面板提供了强大的过滤和搜索功能，帮助快速定位特定的请求和数据。</p>
+<p><img src="/./../../imgs/DevTools/5836b90a64eb9e6f983a82fe59e54dfe.png"></p>
+<h4 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h4><p>可以从大量的网络请求中筛选特定类型的请求，便于分析和调试。</p>
+<p><strong>文本过滤器Text Filter</strong></p>
+<p>#在工具栏的过滤器输入框中输入文本，可以实时过滤出名称或URL中包含该文本的请求</p>
+<p><strong>正则表达式过滤器Regular Expression Filter</strong></p>
+<p>#在文本过滤器中使用正则表达式进行高级筛选。输入内容以“&#x2F;”包围即可识别为正则表达式</p>
+<p>如：&#x2F;api&#x2F;</p>
+<p><strong>类型过滤器Type Filter</strong></p>
+<p>#在工具栏中可以选择不同类型的请求进行筛选，如文档、样式表、脚本、图片、Image、XHR、Fetch等</p>
+<p><strong>状态码过滤器Status Code Filter</strong></p>
+<p>#输入特定的HTTP状态码（如200、404）或状态码范围（如3xx、4xx）来筛选请求</p>
+<h4 id="分析网络性能"><a href="#分析网络性能" class="headerlink" title="分析网络性能"></a>分析网络性能</h4><h5 id="首字节时间（TTFB）"><a href="#首字节时间（TTFB）" class="headerlink" title="首字节时间（TTFB）"></a>首字节时间（TTFB）</h5><p>从发起请求到接收到第一个字节响应数据的时间。TTFB反映了服务器处理请求并开始传输数据所需的时间，是衡量服务器性能的重要标志</p>
+<p><img src="/./../../imgs/DevTools/3c3ebe3b7bf8ce84d2d1ece259c51896.png"></p>
+<h5 id="内容加载时间"><a href="#内容加载时间" class="headerlink" title="内容加载时间"></a>内容加载时间</h5><p>指资源从开始请求到全部内容加载完成所需的时间，这一指标反映了资源的整体下载速度。</p>
+<p><img src="/./../../imgs/DevTools/963975eb363ccf6a011ae642ad3a425f.png"></p>
+<h5 id="DOM内容加载时间"><a href="#DOM内容加载时间" class="headerlink" title="DOM内容加载时间"></a>DOM内容加载时间</h5><p>指浏览器完成解析HTML文档、构建DOM树，并且没有样式表、图片等资源阻塞时的时间点。</p>
+<p><img src="/./../../imgs/DevTools/b4aca218bbd033e4df7dca8aec8399e4.png"></p>
+<h5 id="完全加载时间"><a href="#完全加载时间" class="headerlink" title="完全加载时间"></a>完全加载时间</h5><p><img src="/./../../imgs/DevTools/61e5bfda04b14ad0508f5dfd87f0de83.png"></p>
+<h4 id="模拟网络条件"><a href="#模拟网络条件" class="headerlink" title="模拟网络条件"></a>模拟网络条件</h4><h5 id="模拟慢速网络"><a href="#模拟慢速网络" class="headerlink" title="模拟慢速网络"></a>模拟慢速网络</h5><p>在设置限制和，所有网络请求都会根据选择的速度进行模拟，帮助测试网页在慢速网络环境下的加载性能</p>
+<p><img src="/./../../imgs/DevTools/bc74e5fd9d48587800715eb6cc982161.png"></p>
+<h5 id="模拟离线状态"><a href="#模拟离线状态" class="headerlink" title="模拟离线状态"></a>模拟离线状态</h5><p>离线模式下，所有网络请求都会失败，模拟用户在无网络连接的情况，测试网页的离线功能和缓存机制（如Service Worker和离线缓存）。</p>
+<p><img src="/./../../imgs/DevTools/f58e8644eabf2a555bd9a51865becc20.png"></p>
+<h5 id="强制重新加载和禁用缓存"><a href="#强制重新加载和禁用缓存" class="headerlink" title="强制重新加载和禁用缓存"></a>强制重新加载和禁用缓存</h5><p>调试过程中，浏览器缓存可能会影响请求结果。DevTools提供了强制重新加载和禁用缓存的功能，以确保每次请求都从服务器获取最新数据。</p>
+<p><img src="/./../../imgs/DevTools/8be59eaa5601d40f9ea9bf1166ba04c7.png"></p>
+<h2 id="元素审查Elements"><a href="#元素审查Elements" class="headerlink" title="元素审查Elements"></a>元素审查Elements</h2><h3 id="面板介绍"><a href="#面板介绍" class="headerlink" title="面板介绍"></a>面板介绍</h3><h4 id="DOM树视图"><a href="#DOM树视图" class="headerlink" title="DOM树视图"></a>DOM树视图</h4><p>显示当前页面的HTML结构，以树状视图呈现。开发者可以展开、折叠节点，查看和编辑HTML元素及其特性。</p>
+<p><img src="/./../../imgs/DevTools/de57457554a60d6c342e5275710b1d5e.png"></p>
+<h4 id="样式视图Styles"><a href="#样式视图Styles" class="headerlink" title="样式视图Styles"></a>样式视图Styles</h4><p>显示选定元素的CSS样式规则，开发者可以查看、修改、添加和删除CSS属性，还可以禁用特定的样式规则进行调试</p>
+<p><img src="/./../../imgs/DevTools/4a66714955f037e27a1037a2529a18ae.png"></p>
+<h4 id="计算样式"><a href="#计算样式" class="headerlink" title="计算样式"></a>计算样式</h4><p>显示选定元素的所有计算样式，列出所有应用于该元素的最终CSS属性值，帮助开发者了解样式的来源和优先级</p>
+<p><img src="/./../../imgs/DevTools/43df142531bc01bbbdd5083f2a97e3c1.png"></p>
+<h4 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h4><p>可视化显示选定元素的盒模型，包括内容区域、填充、边框和外边距。开发者可以直观地调整这些属性，优化页面布局。</p>
+<p><img src="/./../../imgs/DevTools/ddecf8bdec8008e09d6dedd27068eae3.png"></p>
+<h4 id="事件监听器"><a href="#事件监听器" class="headerlink" title="事件监听器"></a>事件监听器</h4><p>列出选定元素的所有事件监听器，可以查看和调试这些事件的绑定情况</p>
+<p><img src="/./../../imgs/DevTools/4a66714955f037e27a1037a2529a18ae-1729879723081-27.png"></p>
+<h4 id="DOM断点"><a href="#DOM断点" class="headerlink" title="DOM断点"></a>DOM断点</h4><p>允许开发者在DOM变化时触发断点，例如节点的属性更改、节点移除或子节点变化，帮助调试动态DOM变化</p>
+<p><img src="/./../../imgs/DevTools/6a8c8a706776fbcc8559dd6f6b03046b.png"></p>
+<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><p>显示和编辑选定元素的 HTML 属性。开发者可以直接双击属性名称或值进行编辑，实时更新页面内容。</p>
+<p><img src="/./../../imgs/DevTools/64e33fbd4e198b38a90bc8d801596956.png"></p>
+<h3 id="元素审查与编辑"><a href="#元素审查与编辑" class="headerlink" title="元素审查与编辑"></a>元素审查与编辑</h3><h4 id="选择和高亮页面元素"><a href="#选择和高亮页面元素" class="headerlink" title="选择和高亮页面元素"></a>选择和高亮页面元素</h4><p>使用选择工具，或快捷键按 <code>**Ctrl+Shift+C**</code></p>
+<p><img src="/./../../imgs/DevTools/233580f74394ce31278e7d6273f4d63f.png"></p>
+<p>将鼠标移动到网页中的元素上。该元素会被选中并高亮显示。</p>
+<p><img src="/./../../imgs/DevTools/2abe12fbaf626b4dd2d4e79c853dc4fc.png"></p>
+<h4 id="实时编辑-HTML-结构"><a href="#实时编辑-HTML-结构" class="headerlink" title="实时编辑 HTML 结构"></a>实时编辑 HTML 结构</h4><p>在需要编辑DOM上右键，在菜单中选择 <strong>以HTML格式修改</strong> 即可</p>
+<p>![](.&#x2F;..&#x2F;..&#x2F;imgs&#x2F;DevTools&#x2F;8867a7b88b5d93918d324b0ecf354af3 (1).png)</p>
+<h4 id="修改和添加元素属性"><a href="#修改和添加元素属性" class="headerlink" title="修改和添加元素属性"></a>修改和添加元素属性</h4><p>在需要编辑DOM上右键，在菜单中选择 <strong>添加属性</strong> 或 <strong>修改属性</strong> 即可</p>
+<p><img src="/./../../imgs/DevTools/587780a31c3e35cbada0d575e2ec9377.png"></p>
+<h4 id="CSS-样式编辑"><a href="#CSS-样式编辑" class="headerlink" title="CSS 样式编辑"></a>CSS 样式编辑</h4><p><strong>查看、修改元素和添加、删除、禁用 CSS 规则</strong></p>
+<p>选中DOM元素后，在样式视图中可以看到其对应的样式，在需要修改的样式上双击修改即可</p>
+<p><img src="/./../../imgs/DevTools/c63d5ba2be525519a072d5da9a3ec974.png"></p>
+<p>同上选中DOM元素后，在需要添加、删除和禁用样式上双击修改即可。</p>
+<p><img src="/./../../imgs/DevTools/73bd2fd075f358827d7625888a2dc169.png"></p>
+<h3 id="盒模型与尺寸调整"><a href="#盒模型与尺寸调整" class="headerlink" title="盒模型与尺寸调整"></a>盒模型与尺寸调整</h3><p>盒模型（Box Model）是网页布局和设计中的核心概念，它描述了一个 HTML 元素的内容以及周围的空间。</p>
+<p>盒模型由以下四个部分组成，从内到外依次是：<strong>内容区（Content）</strong>、<strong>内边距（Padding）</strong>、<strong>边框（Border）</strong>、<strong>外边距（Margin）</strong></p>
+<p><img src="/./../../imgs/DevTools/0f74a385e06427d8719851010ce6eb5d.png"></p>
+<p>在需要修改的数据上，双击编辑即可。</p>
+<h3 id="DOM-断点"><a href="#DOM-断点" class="headerlink" title="DOM 断点"></a>DOM 断点</h3><p><strong>设置 DOM</strong> <strong>断点进行调试</strong></p>
+<p>只需要设置 DOM 断点的元素上，右键选择 <strong>发生中断的条件</strong> ，按需要选择规则即可</p>
+<p><img src="/./../../imgs/DevTools/2c64cafcf09eb6b03a21b9b69e1f1f2e.png"></p>
+<p><strong>查看和管理 DOM 断点</strong></p>
+<p>在DOM 断点窗体中，可以看到全部的 DOM 断点 ，可以在需要的断点上右键进行更多操作</p>
+<p><img src="/./../../imgs/DevTools/fde4c755d709a9a54ac182669011efac.png"></p>
+<h3 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h3><p>在事件监听面板上找到需要查看事件，展开即可查看监听此事件的函数。可以移除事件或是查看具体的函数位置。</p>
+<p><img src="/./../../imgs/DevTools/d587e5d3eeb2cd742cacd39dc393e450.png"></p>
+<h2 id="前端渲染技术"><a href="#前端渲染技术" class="headerlink" title="前端渲染技术"></a>前端渲染技术</h2><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000044882791">一文搞懂：什么是SSR、SSG、CSR？前端渲染技术全解析 - 个人文章 - SegmentFault 思否</a></p>
+<p><strong>SSR</strong>：服务器端渲染</p>
+<p><strong>CSR</strong>：客户端渲染</p>
+<p><strong>SSG</strong>：静态站点生成</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/10/25/Web%E5%89%8D%E7%AB%AF/DevTools/" data-id="cm312mv680001qottda9f81fa" data-title="DevTools" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web%E5%89%8D%E7%AB%AF/" rel="tag">Web前端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Reverse/Reverse-Pyhton" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/10/22/Reverse/Reverse-Pyhton/" class="article-date">
@@ -113,7 +348,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/22/Reverse/Reverse-Pyhton/" data-id="cm2kmzze600025ctta4c6aodv" data-title="Reverse_Pyhton" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/22/Reverse/Reverse-Pyhton/" data-id="cm312mv6f000gqottf5m9cccd" data-title="Reverse_Pyhton" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -170,7 +405,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Junkcode/" data-id="cm2kmzze700045ctt97071h29" data-title="Reverse_Junkcode" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Junkcode/" data-id="cm312mv6c0006qott7ac4fxe2" data-title="Reverse_Junkcode" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -218,7 +453,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Andriod/" data-id="cm2kmzze900095ctt4rr4e066" data-title="Reverse_Andriod" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/21/Reverse/Reverse-Andriod/" data-id="cm312mv6b0004qott9zlfdh8i" data-title="Reverse_Andriod" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -272,7 +507,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Function/" data-id="cm2kmzze600015cttcl03hqut" data-title="Reverse_Function" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Function/" data-id="cm312mv6b0005qott6gvx68zw" data-title="Reverse_Function" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -332,7 +567,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Tea/" data-id="cm2kmzze800055ctt4lvtai1f" data-title="Reverse_Tea" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Tea/" data-id="cm312mv6c0009qott60vidbop" data-title="Reverse_Tea" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -422,7 +657,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Tools/" data-id="cm2kmzze800065ctt5b1rey80" data-title="Reverse_Tools" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/20/Reverse/Reverse-Tools/" data-id="cm312mv6f000hqott09ywgfy5" data-title="Reverse_Tools" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -475,7 +710,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/13/hello-world/" data-id="cm2kmzze300005ctt6en8g2gv" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/13/hello-world/" data-id="cm312mv600000qott46yj840i" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -500,7 +735,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reverse/" rel="tag">Reverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web%E5%89%8D%E7%AB%AF/" rel="tag">Web前端</a></li></ul>
     </div>
   </div>
 
@@ -510,7 +745,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Reverse/" style="font-size: 10px;">Reverse</a>
+      <a href="/tags/Reverse/" style="font-size: 20px;">Reverse</a> <a href="/tags/Web%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">Web前端</a>
     </div>
   </div>
 
@@ -519,7 +754,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li></ul>
     </div>
   </div>
 
@@ -532,6 +767,14 @@
       <ul>
         
           <li>
+            <a href="/2024/11/03/Web%E5%89%8D%E7%AB%AF/Html/">Html</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/25/Web%E5%89%8D%E7%AB%AF/DevTools/">DevTools</a>
+          </li>
+        
+          <li>
             <a href="/2024/10/22/Reverse/Reverse-Pyhton/">Reverse_Pyhton</a>
           </li>
         
@@ -541,14 +784,6 @@
         
           <li>
             <a href="/2024/10/21/Reverse/Reverse-Andriod/">Reverse_Andriod</a>
-          </li>
-        
-          <li>
-            <a href="/2024/10/20/Reverse/Reverse-Function/">Reverse_Function</a>
-          </li>
-        
-          <li>
-            <a href="/2024/10/20/Reverse/Reverse-Tea/">Reverse_Tea</a>
           </li>
         
       </ul>
